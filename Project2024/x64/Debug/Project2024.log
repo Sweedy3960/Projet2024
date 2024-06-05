@@ -1,0 +1,8 @@
+﻿  main.c
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(18,8): warning C4244: '=' : conversion de 'double' en 'int', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(20,23): warning C4013: 'malloc' non défini(e) ; extern retournant int pris par défaut
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(20,34): warning C4312: 'cast de type' : la conversion de 'int' en 'char *' d'une taille supérieure
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(25,22): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(31,12): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(39,1): warning C4047: 'initialisation' : les niveaux d'indirection de 'char' et de 'char [2]' sont différents
+  Project2024.vcxproj -> C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\x64\Debug\Project2024.exe
