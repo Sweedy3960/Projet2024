@@ -1,45 +1,55 @@
 #include <stdio.h>
-#include <math.h>
+
+#include "main.h"
+#include "ConvBin.h"
 
 
-void convdecbin(void)
-{
-	int ite = 0;
-	int ValDec = 0;
-	int ValDec_initial = 0;
-	float Quotient = 0;
-	int Reste = 0;
-	char *pt_resultat;
 
-	//Demander une valeur comprise entre 0 et 255
-	printf_s("Entrez une valeur decimale comprise entre 0 et 255 : ");
-	scanf_s("%d", &ValDec_initial);
-
-	ite = (log2(abs(ValDec_initial)) + 1);
-	ValDec = ValDec_initial;
-	pt_resultat = (char*)malloc(ite);
-	//Tant que ValDec est différent de zéro
-	for (int i = 0; i < ite; i++)
-	{
-		//Calculer le quotient et le reste de la division par 2
-		Quotient = (ValDec / 2);
-		Reste = (ValDec % 2);
-		*(pt_resultat + i) = Reste;
-		
-
-		//Mettre à jour ValDec avec le quotient pour la prochaine itération
-		ValDec = Quotient;
-	}
-	
-}
 
 //fonction Trigonomètrique
-void Trigo (void)
+void Trigo(u_unitAngle* units, str_parameters* actual)
 {
-	char choixAngle = " ";
-	//enum  ()
+	char choixAngle;
+	char setting;
+	char numberSettingsAlreadySet = 0;
 
-	printf("affichage l'angle ? <°> ou <rad>");
+	printf("unité d'affichage l'angle ? 0 pour <°> / 1 pour <rad>");
+	scanf("%d", &choixAngle);
+
+	if (choixAngle)
+	{
+		while (numberSettingsAlreadySet <= 1)
+		{
+			printf("witch params 1 pour abscisse / 2 pour le cote oppose / 3 l hypethenuse");
+			scanf("%d", &setting);
+			//scanf("%d", );
+			switch (setting)
+			{
+			case abscisse:
+				printf("gimme abscisse");
+				scanf("%d", &actual->abscisse);
+				break;
+			case coteopp:
+				printf("gimme cote opp ");
+				scanf("%d", &actual->coteopp);
+				break;
+			case hypotenuse:
+				printf("gimme hyp ");
+				scanf("%d", &actual->hypotenuse);
+				break;
+			default:
+				break;
+			}
+			numberSettingsAlreadySet++;
+		}
+
+
+
+
+	}
+
+
+
 
 	//scanf("%d", choixAngle);
 
@@ -49,6 +59,11 @@ void Trigo (void)
 
 void main(void)
 {
+	u_unitAngle units;
+	EnParams settings;
+	str_parameters actual;
+
+	Trigo(&units, &actual);
 	convdecbin();
 
 }
