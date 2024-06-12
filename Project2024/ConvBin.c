@@ -37,7 +37,7 @@ void convdecbin(void)
 
 	printf("choix format affichage ''/'8'/'16'/'32' : ");
 	scanf("%d", &formatAffichage);
-	ValDec = (int)ValDec_initial; // partie entière
+	ValDec = (int)ValDec_initial; // partie entiï¿½re
 
 	fraction = ValDec_initial - ValDec; // partie fractionnaire
 
@@ -70,12 +70,36 @@ void convdecbin(void)
 			Quotient = (float)(ValDec / 2);
 			Reste = (ValDec % 2);
 			resultat[j] = (Reste) ? '1' : '0';
-			//Mettre à jour ValDec avec le quotient pour la prochaine itération
+			//Mettre ï¿½ jour ValDec avec le quotient pour la prochaine itï¿½ration
 			ValDec = Quotient;
 		}
 		resultat[32] = '\0';
 		reverse(resultat, 32);
 		//cpl2 
+		for (int i = 0; i < 32; i++)
+        {
+            if (resultat[i] == '0')
+			{
+                resultat[i] = '0';
+			}
+            else
+			{
+                resultat[i] = '1';
+				itera = i+1;
+				break;
+			}
+        }
+		for (int i = itera; i < 32; i++)
+        {
+            if (resultat[i] == '1')
+            {
+                resultat[i] = '0';
+            }
+			else
+			{
+                resultat[i] = '1';
+			}
+        }
 
 		
 
@@ -105,15 +129,15 @@ void convdecbin(void)
 			Quotient = (float)(ValDec / 2);
 			Reste = (ValDec % 2);
 			resultat[j] = (Reste) ? '1' : '0';
-			//Mettre à jour ValDec avec le quotient pour la prochaine itération
+			//Mettre ï¿½ jour ValDec avec le quotient pour la prochaine itï¿½ration
 			ValDec = Quotient;
 		}
 		resultat[32] = '\0';
 		reverse(resultat, 32);
-		for (i = 0; i <= formatAffichage; i++)
-		{
-
-			printf("%c", resultat[formatAffichage - i]);
-		}
 	}
+	for (i = 0; i <= formatAffichage; i++)
+    {
+            printf("%c", resultat[formatAffichage - i]);
+    }
+
 }
