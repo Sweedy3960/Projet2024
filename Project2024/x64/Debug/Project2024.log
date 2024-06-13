@@ -30,20 +30,6 @@ C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(188,53): wa
 C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(197,19): warning C4013: 'getnumbers' non défini(e) ; extern retournant int pris par défaut
 C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(182,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(186,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(278,14): warning C4133: 'fonction' : types incompatibles - de 'char [2]' à 'FILE *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(278,18): warning C4133: 'fonction' : types incompatibles - de 'FILE *' à 'const char *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(279,21): warning C4133: 'fonction' : types incompatibles - de 'char *' à 'FILE *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(279,25): warning C4133: 'fonction' : types incompatibles - de 'FILE *' à 'const char *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(280,27): warning C4133: 'fonction' : types incompatibles - de 'char *' à 'FILE *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(280,31): warning C4133: 'fonction' : types incompatibles - de 'FILE *' à 'const char *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(281,13): warning C4133: 'fonction' : types incompatibles - de 'char [2]' à 'FILE *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(281,17): warning C4133: 'fonction' : types incompatibles - de 'FILE *' à 'const char *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(282,28): warning C4133: 'fonction' : types incompatibles - de 'char *' à 'FILE *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(282,32): warning C4133: 'fonction' : types incompatibles - de 'FILE *' à 'const char *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(283,13): warning C4133: 'fonction' : types incompatibles - de 'char [2]' à 'FILE *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(283,17): warning C4133: 'fonction' : types incompatibles - de 'FILE *' à 'const char *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(284,28): warning C4133: 'fonction' : types incompatibles - de 'char *' à 'FILE *const '
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(284,32): warning C4133: 'fonction' : types incompatibles - de 'FILE *' à 'const char *const '
 C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(263,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
 C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(264,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(266,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.

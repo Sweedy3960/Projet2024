@@ -275,13 +275,13 @@ void registerLogs(char *counterval, char *buffer_time, char *buffer_user_choix, 
 	fclose(fp);
 	//writteUserVal(&buffer_time);
 	fp = fopen("LOGS.txt", "a"); // open file in write mode
-	fprintf("\n", fp);
-	fprintf(buffer_time, fp);
-	fprintf(buffer_user_choix, fp);
-	fprintf("/", fp);
-	fprintf(&buffer_results[0], fp);
-	fprintf("/", fp);
-	fprintf(&buffer_results[1], fp);
+	fputs("\n", fp);
+	fputs(buffer_time, fp);
+	fputs(buffer_user_choix, fp);
+	//fprintf("/", fp);
+	//fprintf(&buffer_results[0], fp);
+	//fprintf("/", fp);
+	//fprintf(&buffer_results[1], fp);
 	fclose(fp);
 	
 
