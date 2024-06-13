@@ -32,7 +32,7 @@ void convdecbin(void)
 	char resultat[33] = { 0 };
 	float fraction;
 	//Demander une valeur comprise entre 0 et 255
-	printf("Entrez une valeur decimale comprise entre 0 et 255 : ");
+	printf("Entrez une valeur decimale: ");
 	scanf("%f", &ValDec_initial);
 
 	printf("choix format affichage ''/'8'/'16'/'32' : ");
@@ -42,7 +42,7 @@ void convdecbin(void)
 	fraction = ValDec_initial - ValDec; // partie fractionnaire
 
 
-	neg = ((unsigned char)ValDec_initial > 0x7F) ? true : false;
+	neg = ((unsigned) ValDec_initial > 0x7FFF) ? true : false;
 
 
 	ite = (log2(abs(ValDec_initial)) + 1);
@@ -135,9 +135,12 @@ void convdecbin(void)
 		resultat[32] = '\0';
 		reverse(resultat, 32);
 	}
+
+	printf("0b");
 	for (i = 0; i <= formatAffichage; i++)
     {
             printf("%c", resultat[formatAffichage - i]);
     }
+
 
 }
