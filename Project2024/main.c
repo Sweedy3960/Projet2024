@@ -254,12 +254,13 @@ int getnumbers(char *buffer_counter_val)
 	numb = atoi(number);
 	return numb;
 }
-void registerLogs(char *counterval, char *buffer_time, char *buffer_user_choix, char *buffer_results)
+void registerLogs(char *counterval, char *buffer_time, char *buffer_user_choix, float *choixuser,char *buffer_results)
 {
 	FILE* fp;
 	char buffer_counter_val_bin[35] =  "compteur fonction binaire :";
 	char buffer_counter_val_trig[35] =  "compteur fonction Trigo:";
 	char value[4];
+	char choix_user[100];
 	itoa(counterval[0],value,10);
 	strcat(buffer_counter_val_bin, value);
 
@@ -278,10 +279,13 @@ void registerLogs(char *counterval, char *buffer_time, char *buffer_user_choix, 
 	fputs("\n", fp);
 	fputs(buffer_time, fp);
 	fputs(buffer_user_choix, fp);
-	//fprintf("/", fp);
-	//fprintf(&buffer_results[0], fp);
-	//fprintf("/", fp);
-	//fprintf(&buffer_results[1], fp);
+	fputs("/", fp);
+
+	//itoa(choix_user[0], (int)*choixuser, 10);
+	//choix_user[sizeof(choix_user) - 1] = '\0';
+	//fprintf(choixuser, fp);
+	//fputs("/", fp);
+	fprintf( fp,"%f %s" , *choixuser,buffer_results);
 	fclose(fp);
 	
 
@@ -316,6 +320,8 @@ void main(void)
 	char buffer_user_choix[8] ={0};
 	char counterval[2] = { 0 };
 	float buffer_results[2];
+	char debutTrame[35] = "0b";
+	float choixuser = 0;
 
 	createregisterLogs(counterval);
    	time(&timeNow);
@@ -327,14 +333,14 @@ void main(void)
 		strcpy(buffer_user_choix ,"TrigCal");
 		Trigo();
 		counterval[1] = counterval[1] + 1;
-		registerLogs(counterval,buffer_time, buffer_user_choix, buffer_results);
+		registerLogs(counterval,buffer_time, buffer_user_choix, &choixuser, buffer_results);
 	}
 	else
 	{
 		strcpy(buffer_user_choix ,"ConvDec");
-		convdecbin();
+		choixuser = convdecbin(debutTrame);
 		counterval[0] = counterval[0] + 1;
-		registerLogs(counterval, buffer_time, buffer_user_choix, buffer_results);
+		registerLogs(counterval, buffer_time, buffer_user_choix, &choixuser, debutTrame);
 	}
 
 	

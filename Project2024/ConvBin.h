@@ -2,6 +2,6 @@
 #define CONV_BIN_H
 
 
-void convdecbin(void);
+float convdecbin(void);
 
 #endif

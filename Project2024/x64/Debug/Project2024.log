@@ -1,46 +1,12 @@
-﻿  main.c
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(110,20): warning C4013: 'asin' non défini(e) ; extern retournant int pris par défaut
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(110,20): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(112,53): warning C4013: 'sin' non défini(e) ; extern retournant int pris par défaut
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(112,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(117,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(129,20): warning C4013: 'acos' non défini(e) ; extern retournant int pris par défaut
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(129,20): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(131,54): warning C4013: 'cos' non défini(e) ; extern retournant int pris par défaut
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(131,52): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(136,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(148,20): warning C4013: 'atan' non défini(e) ; extern retournant int pris par défaut
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(148,20): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(150,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(155,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(25,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(47,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(57,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(64,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(77,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(84,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(94,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(13,7): warning C4101: 'i' : variable locale non référencée
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(187,57): warning C4047: 'fonction' : les niveaux d'indirection de 'FILE *' et de 'int' sont différents
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(187,45): warning C4024: 'fputs' : types différents pour le paramètre formel et réel 2
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(187,58): warning C4020: 'fputs' : paramètres réels trop nombreux
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(188,52): warning C4047: 'fonction' : les niveaux d'indirection de 'FILE *' et de 'int' sont différents
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(188,42): warning C4024: 'fputs' : types différents pour le paramètre formel et réel 2
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(188,53): warning C4020: 'fputs' : paramètres réels trop nombreux
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(197,19): warning C4013: 'getnumbers' non défini(e) ; extern retournant int pris par défaut
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(182,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(186,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(263,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(264,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(266,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(267,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(269,7): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(277,7): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(293,7): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(307,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(330,73): warning C4133: 'fonction' : types incompatibles - de 'float [2]' à 'char *'
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(337,74): warning C4133: 'fonction' : types incompatibles - de 'float [2]' à 'char *'
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(322,12): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(327,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\main.c(334,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  ConvBin.c
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(22,1): warning C4027: fonction déclarée sans liste de paramètres formels
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(49,18): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(49,8): warning C4244: '=' : conversion de 'double' en 'char', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(56,22): warning C4244: '=' : conversion de 'float' en 'char', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(75,13): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(115,22): warning C4244: '=' : conversion de 'float' en 'char', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(134,13): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(37,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(40,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(146,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   Project2024.vcxproj -> C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\x64\Debug\Project2024.exe
