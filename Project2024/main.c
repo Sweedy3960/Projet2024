@@ -179,7 +179,7 @@ char createregisterLogs(char *counterval)
 	int countTrigo  = 0;
 	char buffer_counter_val[35] = {0};
 	
-    fp = fopen("LOGS.txt", "r+"); // open file in write mode
+    fp = fopen("LOGS.txt", "r"); // open file in write mode
 
     if (fp == NULL) {
 		fputs("ya pas de fichier !!! création ...\n", fp);
@@ -258,34 +258,35 @@ void registerLogs(char *counterval, char *buffer_time, char *buffer_user_choix, 
 {
 	FILE* fp;
 	char buffer_counter_val_bin[35] =  "compteur fonction binaire :";
-	char buffer_counter_val_trig[35] =  "compteur fonction Trigo:";
-	char value[4];
+	char buffer_counter_val_trig[35] =  "compteur fonction Trigo :";
+	char value[5];
 	char choix_user[100];
+	char pos;
+	
 	itoa(counterval[0],value,10);
 	strcat(buffer_counter_val_bin, value);
 
 	itoa(counterval[1], value, 10);
 	strcat(buffer_counter_val_trig, value);
-	//buffer_counter_val_bin[34] = '\n';
-	fp = fopen("LOGS.txt", "w"); // open file in write mode
-
+	buffer_counter_val_bin[34] = '\n';
+	fp = fopen("LOGS.txt", "r+"); // open file in write mode
+	rewind(fp);
 	fputs(buffer_counter_val_bin,  fp);
-
 	fputs("\n", fp);
+	buffer_counter_val_trig[34] = '\n';
 	fputs(buffer_counter_val_trig, fp);
 	fclose(fp);
-	//writteUserVal(&buffer_time);
+	//((unsigned)ValDec_initial > 0x7FFF)
 	fp = fopen("LOGS.txt", "a"); // open file in write mode
-	fputs("\n", fp);
 	fputs(buffer_time, fp);
 	fputs(buffer_user_choix, fp);
 	fputs("/", fp);
-
-	//itoa(choix_user[0], (int)*choixuser, 10);
-	//choix_user[sizeof(choix_user) - 1] = '\0';
-	//fprintf(choixuser, fp);
-	//fputs("/", fp);
-	fprintf( fp,"%f %s" , *choixuser,buffer_results);
+	//fprintf(fp ,choix_user[0]);
+	gcvt(*choixuser,3, value);
+	fputs(value, fp);
+	fputs("/", fp);
+	fputs(buffer_results, fp);
+	fputs("\n", fp);
 	fclose(fp);
 	
 
@@ -333,7 +334,7 @@ void main(void)
 		strcpy(buffer_user_choix ,"TrigCal");
 		Trigo();
 		counterval[1] = counterval[1] + 1;
-		registerLogs(counterval,buffer_time, buffer_user_choix, &choixuser, buffer_results);
+		//registerLogs(counterval,buffer_time, buffer_user_choix, &choixuser, buffer_results);
 	}
 	else
 	{

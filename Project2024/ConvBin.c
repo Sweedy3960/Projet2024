@@ -38,6 +38,23 @@ float convdecbin(char *debutTrame)
 
 	printf("choix format affichage ''/'8'/'16'/'32' : ");
 	scanf("%d", &formatAffichage);
+	switch (formatAffichage)
+	{
+		case 8:
+			formatAffichage = 8;
+			break;
+		case 16:
+			formatAffichage = 16;
+			break;
+		case 32:
+			formatAffichage = 32;
+			break;
+
+		default:
+			formatAffichage = 3;
+			break;
+
+	}
 	ValDec = (int)ValDec_initial; // partie enti�re
 
 	fraction = ValDec_initial - ValDec; // partie fractionnaire
