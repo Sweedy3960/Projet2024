@@ -1,5 +1,6 @@
-compteur fonction binaire :8
+compteur fonction binaire :9
 compteur fonction Trigo :2
 06/14/24 ,11:02:20,ConvDec/8./0b00010
 06/14/24 ,11:02:29,ConvDec/8./0b00010
 06/14/24 ,11:02:31,ConvDec/255/0b11111
+06/14/24 ,12:08:14,ConvDec/50./0b01001
