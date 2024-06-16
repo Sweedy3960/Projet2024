@@ -171,182 +171,175 @@ void Trigo(void)
 
 }
 
-char createregisterLogs(char *counterval)
-//if file created return 1 else 0 + get counter value
+// Fonction pour créer le fichier de logs et initialiser les compteurs
+char createregisterLogs(char* counterval)
+// Renvoie 1 si le fichier est créé, 0 sinon + valeur du compteur
 {
-	FILE *fp;
-	int countBinairy = 0;
-	int countTrigo  = 0;
-	char buffer_counter_val[35] = {0};
-	
-    fp = fopen("LOGS.txt", "r"); // open file in write mode
+    FILE* fp;
+    int countBinairy = 0;
+    int countTrigo = 0;
+    char buffer_counter_val[35] = { 0 };
 
+    // Ouvrir le fichier en mode lecture
+    fp = fopen("LOGS.txt", "r");
+
+    // Si le fichier n'existe pas, le créer et initialiser les compteurs
     if (fp == NULL) {
-		fputs("ya pas de fichier !!! création ...\n", fp);
-		fp = fopen("LOGS.txt", "w"); // open file in write mode
-		fputs( "compteur fonction binaire: %d\n", countBinairy,fp);
-		fputs("compteur fonction Trigo: %d\n", countTrigo,fp);
-		fclose(fp);
-		return 1;
+        fputs("ya pas de fichier !!! création ...\n", fp);
+        fp = fopen("LOGS.txt", "w"); // Ouvrir le fichier en mode écriture
+        fputs("compteur fonction binaire: %d\n", countBinairy, fp);
+        fputs("compteur fonction Trigo: %d\n", countTrigo, fp);
+        fclose(fp);
+        return 1;
     }
-	else
-	{
-		//gets binary 
-		fgets(buffer_counter_val, sizeof buffer_counter_val, fp);
-		printf("\"%s\"\n", buffer_counter_val);
-		counterval[0] = getnumbers(&buffer_counter_val);
-	
-		//gets trigo  
-		fgets(buffer_counter_val, sizeof buffer_counter_val, fp);
-		printf("\"%s\"\n", buffer_counter_val);
-		counterval[1] = getnumbers(&buffer_counter_val);
+    else
+    {
+        // Lire les valeurs des compteurs à partir du fichier
+        fgets(buffer_counter_val, sizeof buffer_counter_val, fp);
+        printf("\"%s\"\n", buffer_counter_val);
+        counterval[0] = getnumbers(&buffer_counter_val);
 
-	}
-	fclose(fp);
-	return 0;
+        fgets(buffer_counter_val, sizeof buffer_counter_val, fp);
+        printf("\"%s\"\n", buffer_counter_val);
+        counterval[1] = getnumbers(&buffer_counter_val);
+
+    }
+    fclose(fp);
+    return 0;
 }
-int getnumbers(char *buffer_counter_val)
+
+// Fonction pour extraire un nombre à partir d'une chaîne de caractères
+int getnumbers(char* buffer_counter_val)
 {
-	int i;
-	int j=0;
-	char number[100] = {0};
-	int numb = 0;
+    int i;
+    int j = 0;
+    char number[100] = { 0 };
+    int numb = 0;
 
-	for (i = 34; i > 0; i--)
-	{
-		
-		if (buffer_counter_val[i] == ':')
-		{
-			break;
-		}
-		number[(34 - i)] = buffer_counter_val[i];
-		
+    // Rechercher le caractère ':' dans la chaîne
+    for (i = 34; i > 0; i--)
+    {
+        if (buffer_counter_val[i] == ':')
+        {
+            break;
+        }
+        number[(34 - i)] = buffer_counter_val[i];
+    }
+    number[sizeof(number - 1)] = '\0';
+    // Supprimer le caractère de fin de ligne
+    for (i = 34; i > 0; i--)
+    {
+        if (number[i] == '\n')
+        {
+            number[i] = 0;
+            break;
+        }
+        number[i] = number[i];
+    }
 
-	}
-	number[sizeof(number - 1)] = '\0';
-	//remove the /n
-	for (i = 34; i > 0; i--)
-	{
-
-		if (number[i] == '\n')
-		{
-			number[i] = 0;
-			break;
-		}
-		number[i] = number[i];
-	}
-
-	for (i = 34; i > 0; i--)
-	{
-
-		if (number[i] != 0x00)
-		{
-			number[j] = number[i];
-			number[i] = 0x00;
-			j++;
-			if (j >= 3)
-			{
-				break;
-
-			}
-		}
-	}
-	numb = atoi(number);
-	return numb;
+    // Extraire le nombre à partir de la chaîne
+    for (i = 34; i > 0; i--)
+    {
+        if (number[i] != 0x00)
+        {
+            number[j] = number[i];
+            number[i] = 0x00;
+            j++;
+            if (j >= 3)
+            {
+                break;
+            }
+        }
+    }
+    numb = atoi(number);
+    return numb;
 }
-void registerLogs(char *counterval, char *buffer_time, char *buffer_user_choix, float *choixuser,char *buffer_results)
+
+// Fonction pour enregistrer les logs
+void registerLogs(char* counterval, char* buffer_time, char* buffer_user_choix, float* choixuser, char* buffer_results)
 {
-	FILE* fp;
-	char buffer_counter_val_bin[35] =  "compteur fonction binaire :";
-	char buffer_counter_val_trig[35] =  "compteur fonction Trigo :";
-	char value[5];
-	char choix_user[100];
-	char pos;
-	
-	itoa(counterval[0],value,10);
-	strcat(buffer_counter_val_bin, value);
+    FILE* fp;
+    char buffer_counter_val_bin[35] = "compteur fonction binaire :";
+    char buffer_counter_val_trig[35] = "compteur fonction Trigo :";
+    char value[20];
+    char choix_user[100];
+    char pos;
 
-	itoa(counterval[1], value, 10);
-	strcat(buffer_counter_val_trig, value);
-	buffer_counter_val_bin[34] = '\n';
-	fp = fopen("LOGS.txt", "r+"); // open file in write mode
-	rewind(fp);
-	fputs(buffer_counter_val_bin,  fp);
-	fputs("\n", fp);
-	buffer_counter_val_trig[34] = '\n';
-	fputs(buffer_counter_val_trig, fp);
-	fclose(fp);
-	//((unsigned)ValDec_initial > 0x7FFF)
-	fp = fopen("LOGS.txt", "a"); // open file in write mode
-	fputs(buffer_time, fp);
-	fputs(buffer_user_choix, fp);
-	fputs("/", fp);
-	//fprintf(fp ,choix_user[0]);
-	gcvt(*choixuser,3, value);
-	fputs(value, fp);
-	fputs("/", fp);
-	fputs(buffer_results, fp);
-	fputs("\n", fp);
-	fclose(fp);
-	
+    // Convertir la valeur en chaîne de caractères
 
+    itoa(counterval[0], value, 10);
+    strcat(buffer_counter_val_bin, value);
+    buffer_counter_val_bin[34] = '\n';
+    fp = fopen("LOGS.txt", "r+"); // Ouvrir le fichier en mode lecture/écriture
+    rewind(fp);
+    fputs(buffer_counter_val_bin, fp);
+    fputs("\n", fp);
+    buffer_counter_val_trig[34] = '\n';
+    fputs(buffer_counter_val_trig, fp);
+    fclose(fp);
+
+    // Écrire les logs
+    fp = fopen("LOGS.txt", "a"); // Ouvrir le fichier en mode ajout
+    fputs(buffer_time, fp);
+    fputs(buffer_user_choix, fp);
+    fputs("/", fp);
+    gcvt(*choixuser, 3, value);
+    fputs(value, fp);
+    fputs("/", fp);
+    fputs(buffer_results, fp);
+    fputs("\n", fp);
+    fclose(fp);
 }
 
-void writteUserVal(char *buffer_time)
+// Fonction pour écrire les valeurs de l'utilisateur
+void writteUserVal(char* buffer_time)
 {
-	FILE* fp;
-	fp = fopen("LOGS.txt", "a"); // open file in write mode
-	fputs("\n", fp);
-	fputs(buffer_time, fp);
-	//fputs(buffer_user_choix, fp);
-	//fputs("/", fp);
-	//fputs(buffer_results, fp);
-	fclose(fp);
+    FILE* fp;
+    fp = fopen("LOGS.txt", "a"); // Ouvrir le fichier en mode ajout
+    fputs("\n", fp);
+    fputs(buffer_time,fp);
+    fclose(fp);
 }
 
+// Fonction pour afficher le menu
 char menu(void)
 {
-	int userChoix;
-	printf("____________________________________\n");
-	printf("What u want to do ? Convertisseur = 0 TrigoCalulator =1\n");
-	scanf("%d", &userChoix);
-	return userChoix;
+    int userChoix;
+    printf("____________________________________\n");
+    printf("What u want to do ? Convertisseur = 0 TrigoCalulator =1\n");
+    scanf("%d", &userChoix);
+    return userChoix;
 }
 
+// Fonction principale
 void main(void)
 {
-	time_t timeNow;
-	struct tm* info;
-	char buffer_time[80];
-	char buffer_user_choix[8] ={0};
-	char counterval[2] = { 0 };
-	float buffer_results[2];
-	char debutTrame[35] = "0b";
-	float choixuser = 0;
+    time_t timeNow;
+    struct tm* info;
+    char buffer_time[80];
+    char buffer_user_choix[8] = { 0 };
+    char counterval[2] = { 0 };
+    float buffer_results[2];
+    char debutTrame[35] = "0b";
+    float choixuser = 0;
 
-	createregisterLogs(counterval);
-   	time(&timeNow);
-   	info = localtime( &timeNow );
-   	strftime(buffer_time,80,"%x ,%X,", info);
+    createregisterLogs(counterval);
+    time(&timeNow);
+    info = localtime(&timeNow);
+    strftime(buffer_time, 80, "%x ,%X,", info);
 
-	if(menu())
-	{
-		strcpy(buffer_user_choix ,"TrigCal");
-		Trigo();
-		counterval[1] = counterval[1] + 1;
-		//registerLogs(counterval,buffer_time, buffer_user_choix, &choixuser, buffer_results);
-	}
-	else
-	{
-		strcpy(buffer_user_choix ,"ConvDec");
-		choixuser = convdecbin(debutTrame);
-		counterval[0] = counterval[0] + 1;
-		registerLogs(counterval, buffer_time, buffer_user_choix, &choixuser, debutTrame);
-	}
-
-	
-	
-	
-	
-
+    if (menu())
+    {
+        strcpy(buffer_user_choix, "TrigCal");
+        Trigo();
+        counterval[1] = counterval[1] + 1;
+        //registerLogs(counterval,buffer_time, buffer_user_choix, &choixuser, buffer_results);
+    }
+    else
+    {
+        strcpy(buffer_user_choix, "ConvDec");
+        choixuser = convdecbin(debutTrame);
+        counterval[0] = counterval[0] + 1;
+        registerLogs(counterval, buffer_time, buffer_user_choix, &choixuser, debutTrame);
+    }
 }
