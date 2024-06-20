@@ -1,12 +1,47 @@
-﻿  ConvBin.c
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(41,18): warning C4244: 'fonction' : conversion de 'float' en 'int', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(41,8): warning C4244: '=' : conversion de 'double' en 'char', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(48,22): warning C4244: '=' : conversion de 'float' en 'char', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(67,13): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(107,22): warning C4244: '=' : conversion de 'float' en 'char', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(126,13): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(151,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(169,1): warning C4027: fonction déclarée sans liste de paramètres formels
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(184,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\Project2024\ConvBin.c(187,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Project2024.vcxproj -> C:\ACL\PRO_ACL\VisualStudio\PROJETPROG\Projet2024\x64\Debug\Project2024.exe
+﻿  main.c
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(111,20): warning C4013: 'asin' non défini(e) ; extern retournant int pris par défaut
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(111,20): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(113,53): warning C4013: 'sin' non défini(e) ; extern retournant int pris par défaut
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(113,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(118,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(130,20): warning C4013: 'acos' non défini(e) ; extern retournant int pris par défaut
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(130,20): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(132,54): warning C4013: 'cos' non défini(e) ; extern retournant int pris par défaut
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(132,52): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(137,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(149,20): warning C4013: 'atan' non défini(e) ; extern retournant int pris par défaut
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(149,20): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(151,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(156,51): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(26,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(48,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(58,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(65,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(78,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(85,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(95,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(13,7): warning C4101: 'i' : variable locale non référencée
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(186,62): warning C4047: 'fonction' : les niveaux d'indirection de 'FILE *' et de 'int' sont différents
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(186,50): warning C4024: 'fputs' : types différents pour le paramètre formel et réel 2
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(186,64): warning C4020: 'fputs' : paramètres réels trop nombreux
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(187,58): warning C4047: 'fonction' : les niveaux d'indirection de 'FILE *' et de 'int' sont différents
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(187,48): warning C4024: 'fputs' : types différents pour le paramètre formel et réel 2
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(187,60): warning C4020: 'fputs' : paramètres réels trop nombreux
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(196,25): warning C4013: 'getnumbers' non défini(e) ; extern retournant int pris par défaut
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(180,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(185,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(266,5): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(267,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(269,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(278,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(282,5): warning C4996: 'gcvt': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _gcvt. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(262,10): warning C4101: 'pos' : variable locale non référencée
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(261,10): warning C4101: 'choix_user' : variable locale non référencée
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(294,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(306,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(337,32): warning C4087: 'convdecbin' : déclaré avec une liste de paramètres 'void'
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(324,12): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(329,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(336,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\taschoulat\Documents\GitHub\Projet2024\Project2024\main.c(318,11): warning C4101: 'buffer_results' : variable locale non référencée
+  Project2024.vcxproj -> C:\Users\taschoulat\Documents\GitHub\Projet2024\x64\Debug\Project2024.exe

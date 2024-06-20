@@ -16,9 +16,10 @@ void Trigo(void)
 	int etat_calcule = 0;
 	str_triangle triangle;
 	u_angle unite_angle;
+
 	/********************************/
-			/*SAISIE DES DONNEES UTILISATEUR*/
-			/********************************/
+	/*SAISIE DES DONNEES UTILISATEUR*/
+	/********************************/
 
 	printf("unitee de l'angle : (1)rad ou (2)deg\n");
 
@@ -162,11 +163,6 @@ void Trigo(void)
 		break;
 	}
 	
-
-
-
-
-	//scanf("%d", choixAngle);
 
 
 }
